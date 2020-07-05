@@ -1,0 +1,39 @@
+.number {
+    background-image: url('../../img/parallax/7.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0 80px;
+    .number_content {
+        margin-bottom: 30px;
+        .number_item {
+            .number_icon {
+                float: left;
+                color: transparent;
+                font-size: 36px;
+                i {
+                    -webkit-text-stroke: 1px white;
+                }
+            }
+            .number_info {
+                float: left;
+                position: relative;
+                padding-left: 80px;
+                color: white;
+                &::before {
+                    background: rgba(255, 255, 255, .4);
+                    position: absolute;
+                    top: 0;
+                    left: 35px;
+                    width: 1px;
+                    height: 80px;
+                    content: "";
+                    transform: rotate(30deg);
+                }
+                span {
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

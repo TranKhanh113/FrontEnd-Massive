@@ -1,0 +1,42 @@
+.title {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+    p {
+        padding-top: 30px;
+        display: inline-block;
+        width: 50%;
+        margin: 0 auto;
+        color: #7e7e7e;
+        line-height: 25px;
+    }
+}
+
+@include responsive('large') {
+    .title {
+        p {
+            width: 70%;
+        }
+    }
+}
+
+@include responsive('medium') {
+    .title {
+        p {
+            width: 80%;
+        }
+    }
+}
+
+@include responsive('small') {
+    .title {
+        p {
+            width: 90%;
+        }
+    }
+}

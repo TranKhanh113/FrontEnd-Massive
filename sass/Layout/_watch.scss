@@ -1,0 +1,26 @@
+.watch {
+    .watch_video {
+        animation-duration: 2s;
+        text-align: center;
+    }
+}
+
+@include responsive('small') {
+    .watch {
+        .watch_video {
+            iframe {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@include responsive('medium') {
+    .watch {
+        .watch_video {
+            iframe {
+                width: 90%;
+            }
+        }
+    }
+}

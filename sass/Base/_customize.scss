@@ -1,0 +1,80 @@
+//custom lightbox
+.lightbox {
+    .lb-image {
+        border: 0;
+    }
+}
+
+//custom owl-carousel
+.carousel2 {
+    .owl-theme {
+        .owl-dots {
+            bottom: 0;
+            float: right;
+            position: absolute;
+            right: 30px;
+            margin-bottom: 30px;
+            .owl-dot {
+                outline: none;
+                &.active {
+                    span {
+                        background-color: white;
+                    }
+                }
+                span {
+                    background-color: transparent;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    background-clip: border-box;
+                }
+            }
+        }
+    }
+}
+
+.carousel3 {
+    .owl-carousel {
+        .owl-stage-outer {
+            text-align: center;
+        }
+    }
+    .owl-theme {
+        .owl-dots {
+            .owl-dot {
+                outline: none;
+                &.active {
+                    span {
+                        background-color: white;
+                    }
+                }
+                span {
+                    background-color: transparent;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    background-clip: border-box;
+                }
+            }
+        }
+    }
+}
+
+.client {
+    .owl-theme {
+        .owl-dots {
+            .owl-dot {
+                outline: none;
+                span {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    background-clip: border-box;
+                }
+            }
+        }
+    }
+}

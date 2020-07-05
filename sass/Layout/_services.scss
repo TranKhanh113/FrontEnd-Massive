@@ -1,0 +1,40 @@
+.services {
+    margin-bottom: 80px;
+    .services_div {
+        text-align: center;
+        float: left;
+        border: 1px solid #f2f2f2;
+        transition: all 1s;
+        .services_items {
+            padding: 40px 30px;
+            animation-duration: 2s;
+            i {
+                transition: all 1s;
+                font-size: 36px;
+                -webkit-text-stroke: 2px rgba(255, 255, 255, 0.9);
+            }
+            h4 {
+                margin: 30px 0 20px;
+                font-size: 18px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 1s;
+            }
+            p {
+                color: #7e7e7e;
+            }
+        }
+        &:hover {
+            color: #7e7e7e;
+            border: 1px solid transparent;
+            background: #222;
+            i {
+                color: #d6b161;
+                -webkit-text-stroke: 2px #222;
+            }
+            h4 {
+                color: white;
+            }
+        }
+    }
+}

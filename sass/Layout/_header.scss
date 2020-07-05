@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 99;
+    transition: all 1s;
+    .navbar {
+        padding: 0;
+        .menu_logo {
+            .logo {
+                #logo_img {
+                    transition: all 1s;
+                    height: 96px;
+                    width: auto;
+                }
+                .test {
+                    height: 60px;
+                    width: auto;
+                }
+            }
+        }
+        .menu_content {
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            #navbarNav {
+                .navbar-nav {
+                    font-weight: $fw-4;
+                    .nav-item {
+                        padding: 0 5px;
+                        font-size: 13px;
+                        a {
+                            color: $color-black-1;
+                        }
+                        &:hover {
+                            a {
+                                color: $color-yellow-1;
+                            }
+                        }
+                    }
+                    .active {
+                        a {
+                            color: $color-yellow-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

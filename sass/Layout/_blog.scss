@@ -1,0 +1,134 @@
+.blog {
+    padding-bottom: 80px;
+    .blog_content {
+        .blog_item {
+            float: left;
+            padding: 0;
+            position: relative;
+            .blog_img1 {
+                width: 100%;
+                height: 309px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    margin-top: -6px;
+                    content: "";
+                    transform: rotate(45deg);
+                    border-style: none;
+                    border-color: #fff;
+                    border-right: 1px solid #fff;
+                    -o-border-image: none;
+                    border-image: none;
+                    background-color: #fff;
+                }
+            }
+            .blog_img3 {
+                width: 100%;
+                height: 309px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    bottom: 50%;
+                    margin-bottom: -6px;
+                    content: "";
+                    transform: rotate(45deg);
+                    border-style: none;
+                    border-color: #fff;
+                    border-right: 1px solid #fff;
+                    -o-border-image: none;
+                    border-image: none;
+                    background-color: #fff;
+                }
+            }
+            .blog_info {
+                height: 309px;
+                padding: 80px 40px;
+                position: relative;
+                h4 {
+                    float: left;
+                    width: 100%;
+                    height: auto;
+                    margin-right: 0;
+                    margin-bottom: 35px;
+                    padding-top: 0;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    // color: transparent;
+                    background: none;
+                    font-size: 14px;
+                    &::after {
+                        position: absolute;
+                        top: 35%;
+                        left: 40px;
+                        width: 60px;
+                        height: 1.5px;
+                        content: "";
+                        background: #222;
+                    }
+                }
+                h3 {
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    color: #222;
+                    margin-bottom: 30px;
+                    transition: all 1s;
+                    &:hover {
+                        cursor: pointer;
+                        color: #d6b161;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    display: inline;
+                    li {
+                        display: inline;
+                        margin-right: 10px;
+                        a {
+                            text-transform: uppercase;
+                            color: #909090;
+                            font-size: 12px;
+                            letter-spacing: 1px;
+                            transition: all 0.5s;
+                            &:hover {
+                                color: #d6b161;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blog_bot {
+        margin-top: 50px;
+        text-align: center;
+        a {
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #bbb;
+            transition: all 0.5s;
+            &:hover {
+                text-decoration: none;
+                color: #222;
+            }
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}

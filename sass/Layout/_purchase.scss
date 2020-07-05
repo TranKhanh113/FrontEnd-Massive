@@ -1,0 +1,73 @@
+.purchase {
+    background-color: #222;
+    padding: 60px 0;
+    .row {
+        align-items: center;
+        color: white;
+        .pur_text {
+            h4 {
+                font-size: 15px;
+            }
+            p {
+                font-size: 24px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                span {
+                    color: #d6b161;
+                }
+            }
+        }
+        .pur_btn {
+            button {
+                padding: 15px 30px;
+                float: right;
+                border-radius: 4px;
+                text-transform: uppercase;
+                transition: all 1s;
+                &:hover {
+                    background-color: #d6b161;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('small') {
+    .purchase {
+        .row {
+            .pur_text {
+                h4 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            .pur_btn {
+                button {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium') {
+    .purchase {
+        .row {
+            .pur_text {
+                h4 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            .pur_btn {
+                button {
+                    float: left;
+                }
+            }
+        }
+    }
+}

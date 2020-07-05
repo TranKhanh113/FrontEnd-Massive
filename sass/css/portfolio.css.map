@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,UAFE,CACN,kBAAkB,CACd,SAAS;AAFjB,UAAU,CACN,kBAAkB,CAEd,SAAS,CAAC;EACN,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "../Layout/portfolio.scss"
+    ],
+    "names": [],
+    "file": "portfolio.css"
+}

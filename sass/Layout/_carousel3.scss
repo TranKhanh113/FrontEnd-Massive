@@ -1,0 +1,53 @@
+.carousel3 {
+    background-image: url('../../img/parallax/19.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 70px 0;
+    .item {
+        .carousel3_img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            animation-duration: 1s;
+            img {
+                border-radius: 50%;
+            }
+        }
+        .carousel3_text {
+            text-align: center;
+            color: #fff;
+            p {
+                width: 60%;
+                margin: 0 auto;
+                font-size: 16px;
+                font-style: italic;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: 0;
+            }
+            span {
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@include responsive ('small') {
+    .carousel3 {
+        .item {
+            .carousel3_text {
+                p {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.portfolio {
+    .portfolio_content {
+        .port_tabs {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: $color-gray-2;
+            #myTabs {
+                text-decoration: none;
+                list-style: none;
+                .tabs {
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: 0 15px;
+                    a {
+                        letter-spacing: 3px;
+                        transition: all 1s;
+                    }
+                    &:hover {
+                        a {
+                            text-decoration: none;
+                            color: #222;
+                        }
+                    }
+                }
+                .active {
+                    a {
+                        color: #222;
+                    }
+                }
+            }
+        }
+        .port_items {
+            position: relative;
+            min-height: 300px;
+            transition: all 1s;
+            .port_filter {
+                float: left;
+                margin: 15px 0;
+                .port_img {
+                    position: relative;
+                    img {
+                        width: 100%;
+                    }
+                    .port_hover {
+                        position: absolute;
+                        text-align: center;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: 0;
+                        transition: all .3s;
+                        opacity: 0;
+                        border: 20px solid rgba(0, 0, 0, .1);
+                        background-color: rgba(255, 255, 255, .9);
+                        .hover_top {
+                            position: absolute;
+                            text-align: center;
+                            top: 0;
+                            width: 100%;
+                            padding: 0 20px;
+                            transition: all .3s .2s;
+                            -webkit-transform: translateY(-35%);
+                            -ms-transform: translateY(-35%);
+                            transform: translateY(-35%);
+                            opacity: 0;
+                            font-size: 35px;
+                            i {
+                                -webkit-text-stroke: 3px rgba(255, 255, 255, 0.9);
+                            }
+                        }
+                        &:hover {
+                            .hover_top {
+                                text-align: center;
+                                top: 25%;
+                                opacity: 1;
+                                a {
+                                    color: #222;
+                                }
+                            }
+                        }
+                        .hover_bot {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            -webkit-transition: all .3s .2s;
+                            transition: all .3s .2s;
+                            -webkit-transform: translateY(45%);
+                            -ms-transform: translateY(45%);
+                            transform: translateY(45%);
+                            text-align: center;
+                            opacity: 0;
+                            font-size: 35px;
+                            margin-bottom: 20px;
+                            h4 {
+                                color: #222;
+                                letter-spacing: 4px;
+                                text-transform: uppercase;
+                                font-size: 14px;
+                                transition: all 1s;
+                                &:hover {
+                                    color: $color-yellow-1;
+                                }
+                            }
+                            p {
+                                margin-bottom: 0;
+                                letter-spacing: 3px;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: normal;
+                                line-height: 30px;
+                                a {
+                                    transition: all 1s;
+                                    color: #757575;
+                                    height: 100%;
+                                    text-decoration: none;
+                                    &:hover {
+                                        color: $color-yellow-1;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            .hover_bot {
+                                bottom: 10%;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .port_hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active {
+    a {
+        color: #222;
+    }
+    color: #222;
+}
